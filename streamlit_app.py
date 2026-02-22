@@ -5,7 +5,8 @@ import streamlit as st
 import requests
 
 # API_URL = "http://localhost:8000/research"
-API_URL = "http://127.0.0.1:8000/research"
+# API_URL = "http://127.0.0.1:8000/research"
+API_URL = "https://autonomous-research-assistant-c47v.onrender.com/research"
 st.set_page_config(page_title="Autonomous Research Assistant", layout="wide")
 
 st.title("🧠 Autonomous Research Assistant")
