@@ -8,7 +8,7 @@ api = FastAPI(title="Autonomous Research Assistant")
 api.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://autonomous-research-assistant-5j689zjkvqtp4lgdlarquu.streamlit.app"
+        "*"
     ],
     allow_credentials=True,
     allow_methods=["*"],
