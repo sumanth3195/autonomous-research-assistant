@@ -49,39 +49,3 @@ def format_report(state):
 
 
 
-
-
-# def format_report(state):
-#     llm = ChatGroq(
-#         groq_api_key=os.getenv("GROQ_API_KEY"),
-#         model_name="llama-3.1-8b-instant",
-#         temperature=0
-#     )
-
-#     prompt = f"""
-#     Convert the following research content into a structured markdown report.
-
-#     Structure:
-
-#     # Title
-#     ## Overview
-#     ## Key Concepts
-#     ## Applications
-#     ## Challenges
-#     ## Conclusion
-#     ## References
-
-#     Content:
-#     {state.draft_answer}
-#     """
-
-#     response = llm.invoke(prompt)
-#     # try:
-#     #     response = llm.invoke(prompt)
-#     # except Exception as e:
-#     #     print("Groq error in refine:", e)
-#     #     state.refined_query = state.query
-#     #     return state
-
-#     state.final_answer = response.content
-#     return state

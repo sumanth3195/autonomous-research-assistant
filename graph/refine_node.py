@@ -24,12 +24,6 @@ def refine(state):
     """
 
     response = llm.invoke(prompt)
-    # try:
-    #     response = llm.invoke(prompt)
-    # except Exception as e:
-    #     print("Groq error in refine:", e)
-    #     state.refined_query = state.query
-    #     return state
-
+    
     state.refined_query = response.content
     return state

@@ -7,6 +7,6 @@ class ResearchState(BaseModel):
     web_results: List[str] = []
     web_sources: List[str] = []
     retrieved_docs: List[str] = []
-    draft_answer: str = ""   # NEW
+    draft_answer: str = ""   
     final_answer: str = ""
     verified_answer: str = ""
